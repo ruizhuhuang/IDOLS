@@ -24,6 +24,9 @@
 	@if(cases.contains("showSpeechWorkflow")) {
 	<div class="text"><a href="@controllers.routes.WorkflowController.showSpeechWorkflow()">Use Case: Speech Recognition</a></div>
 	}	
+	@if(cases.contains("showEnvirotypingWorkflow")) {
+	<div class="text"><a href="@controllers.routes.WorkflowController.showEnvirotypingWorkflow()">Use Case: Envirotyping Analysis</a></div>
+	}	
 	
 	<div class="text"><a href="@controllers.routes.WorkflowController.showWorkflow()">Use Case: Set Up Workflow</a></div>
 

@@ -26,7 +26,7 @@
 			},
             "access_level":"User",
             "inputs":
-            		{"WORKING_DIRECTORY":"/home/idols/test_run_r_script",
+            		{"WORKING_DIRECTORY":"/Users/rhuang/Documents/Dropbox_1/TACC/premium",
             		"R_SCRIPT":"test_full.R",
             		"DATASET":"sim_large_dataset_NormalMixed.dat"},
             "executable_path":"/home/idols/test_run_r_script/run_premium.sh"

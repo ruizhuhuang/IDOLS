@@ -94,6 +94,14 @@ class WorkflowController @Inject() (
     generate_workflow(workflow_json, request.identity)
     Future.successful(Ok(views.html.workflow.workflow(request.identity, workflow.head, tasks.toArray)))
   }
+  /**
+   * An Action to render the Envirotyping Workflow page.
+   */
+  def showEnvirotypingWorkflow() = silhouette.SecuredAction.async { implicit request: SecuredRequest[DefaultEnv, AnyContent] =>
+    workflow_json = configuration.underlying.getString("envirotyping.workflow.json")
+    generate_workflow(workflow_json, request.identity)
+    Future.successful(Ok(views.html.workflow.workflow(request.identity, workflow.head, tasks.toArray)))
+  }
 
   /**
    * Generate a workflow based on information retrieved from workflow_json file

@@ -1,0 +1,50 @@
+{
+    "head":"Envirotyping Analysis",
+    "description":"test",
+    "tasks":
+    [
+
+        {
+            "task_name":"Show Configuration File",
+            "task_type":"showResultTask",
+            "task_description":
+                {
+                    "format":"text",
+                    "content":"Show configuration file used to set working directory, input dataset, output plot file name and profRegr arguments",
+                    "file":"/Users/rhuang/Documents/Dropbox_1/TACC/idols_nsf/idols/public/workflows/d1.txt"
+                },
+             "text_or_image":"text",
+			"hadoop_file_system":"No",
+            "access_level": "User",
+            "file_path":"/root/premium"
+        },
+        {
+            "task_name":"Data Analysis using PReMiuM R package",
+            "task_type":"RunInputScriptTask",
+            "task_description":
+                {
+                    "format":"text",
+                    "content":"An executable file(full file path) that takes premium.config as first argument",
+                    "file":"/Users/rhuang/Documents/Dropbox_1/TACC/idols_nsf/idols/public/workflows/d1.txt"
+                },
+            "access_level":"User",
+            	"inputs":
+            		{"config_file_name":"premium.config"},
+            "executable_path":"/root/premium/run.sh"
+        },
+        {
+            "task_name":"Show Risk Profiles Plot",
+            "task_type":"showResultTask",
+            "task_description":
+                {
+                    "format":"text",
+                    "content":"Show risk profiles plot for the profile regression model",
+                    "file":"/Users/rhuang/Documents/Dropbox_1/TACC/idols_nsf/idols/public/workflows/d1.txt"
+                },
+             "text_or_image":"image",
+			"hadoop_file_system":"No",
+            "access_level": "User",
+            "file_path":"/root/premium/"
+        }
+    ]
+}
