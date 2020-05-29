@@ -44,7 +44,7 @@
              "text_or_image":"image",
 			"hadoop_file_system":"No",
             "access_level": "User",
-            "file_path":"/work/03076/rhuang/stampede2/premium_demo/premium/"
+            "file_path":"/work/03076/rhuang/stampede2/premium_demo/"
         }
     ]
 }
