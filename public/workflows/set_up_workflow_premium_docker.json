@@ -16,7 +16,7 @@
              "text_or_image":"text",
 			"hadoop_file_system":"No",
             "access_level": "User",
-            "file_path":"/root/premium"
+            "file_path":"/work/03076/rhuang/stampede2/premium_demo"
         },
         {
             "task_name":"Data Analysis using PReMiuM R package",
@@ -30,7 +30,7 @@
             "access_level":"User",
             	"inputs":
             		{"config_file_name":"premium.config"},
-            "executable_path":"/root/premium/run.sh"
+            "executable_path":"/work/03076/rhuang/stampede2/premium_demo/run.sh"
         },
         {
             "task_name":"Show Risk Profiles Plot",
@@ -44,7 +44,7 @@
              "text_or_image":"image",
 			"hadoop_file_system":"No",
             "access_level": "User",
-            "file_path":"/root/premium/"
+            "file_path":"/work/03076/rhuang/stampede2/premium_demo/premium/"
         }
     ]
 }
